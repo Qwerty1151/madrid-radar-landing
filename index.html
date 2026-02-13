@@ -4,19 +4,31 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Madrid Radar — Trademark monitoring for professionals</title>
-  <meta name="description" content="Madrid Radar is a SaaS tool for monitoring trademark events based on official WIPO Madrid Monitor public data." />
+  <meta name="description" content="Madrid Radar is a workflow tool for tracking Madrid Monitor trademark cases with a clean portfolio view, event timeline, and exports." />
   <style>
     :root { color-scheme: light; }
     body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #111; background: #fff; }
-    .wrap { max-width: 920px; margin: 0 auto; padding: 48px 20px; }
-    header { padding-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 40px 20px; }
+    header { padding-bottom: 18px; border-bottom: 1px solid #e5e7eb; }
     h1 { margin: 0 0 8px; font-size: 36px; letter-spacing: -0.02em; }
     .tagline { margin: 0; font-size: 18px; color: #374151; }
+    .nav { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .nav a { font-size: 14px; color: #111827; text-decoration: none; padding: 6px 10px; border: 1px solid #e5e7eb; border-radius: 999px; background: #fff; }
+    .nav a:hover { background: #f9fafb; }
     .grid { display: grid; grid-template-columns: 1fr; gap: 18px; margin-top: 28px; }
     @media (min-width: 840px) { .grid { grid-template-columns: 1fr 1fr; } }
     section { padding: 18px; border: 1px solid #e5e7eb; border-radius: 14px; background: #fff; }
     h2 { margin: 0 0 10px; font-size: 18px; }
     p { margin: 0; line-height: 1.55; color: #111827; }
+    .full { margin-top: 18px; }
+    .full section { margin-top: 14px; }
+    .price { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 12px; }
+    @media (min-width: 840px) { .price { grid-template-columns: 1fr 1fr 1fr; } }
+    .card { padding: 16px; border: 1px solid #e5e7eb; border-radius: 14px; background: #fff; }
+    .card h3 { margin: 0 0 8px; font-size: 16px; }
+    .card .usd { font-weight: 700; font-size: 18px; }
+    .muted { color: #6b7280; }
+    .anchor { scroll-margin-top: 18px; }
     ul { margin: 10px 0 0; padding-left: 18px; color: #111827; }
     li { margin: 6px 0; }
     .note { margin-top: 18px; padding: 14px 16px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 14px; color: #374151; }
@@ -33,55 +45,161 @@
       <p class="small" style="margin-top:10px;">
         Subscription-based SaaS access. Digital service only. No physical goods.
       </p>
+
+      <nav class="nav" aria-label="Page">
+        <a href="#product">Product</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#terms">Terms</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
-    <div class="grid">
+
+    <div id="product" class="anchor grid">
       <section>
-        <h2>What is Madrid Radar?</h2>
+        <h2>Product</h2>
         <p>
-          Madrid Radar is a legal monitoring service designed for trademark attorneys,
-          IP consultants, and companies managing international trademark portfolios.
-          The service provides structured access to trademark registration events
-          published in the official WIPO Madrid Monitor system.
+          Madrid Radar is a workflow tool for professionals who track Madrid Monitor trademark cases.
+          It keeps a clean portfolio view, a case timeline of meaningful updates, and exports.
         </p>
       </section>
 
       <section>
-        <h2>What does the service do?</h2>
-        <p>Madrid Radar helps professionals:</p>
+        <h2>What it helps with</h2>
         <ul>
-          <li>monitor changes and events in international trademark registrations;</li>
-          <li>track legal status updates across designated jurisdictions;</li>
-          <li>review structured timelines of trademark-related events;</li>
-          <li>work with publicly available registry data in a convenient analytical format.</li>
+          <li>Portfolio view: cases and designated countries at a glance</li>
+          <li>Event timeline: key updates, statuses, and documents in one place</li>
+          <li>Faster detection of changes ("early signals") on paid plans</li>
+          <li>Exports for reporting and internal workflows</li>
         </ul>
       </section>
 
       <section>
-        <h2>Data sources</h2>
-        <p>
-          Madrid Radar uses publicly available information published by the
-          World Intellectual Property Organization (WIPO) in the Madrid Monitor system.
-          The service does not modify, bypass, or restrict access to any official resources
-          and is intended as a complementary analytical tool.
-        </p>
+        <h2>Who it is for</h2>
+        <ul>
+          <li>Trademark attorneys</li>
+          <li>IP paralegals / assistants</li>
+          <li>In-house IP teams</li>
+          <li>IP consultants managing international portfolios</li>
+        </ul>
       </section>
 
       <section>
-        <h2>Who is this service for?</h2>
+        <h2>Data and positioning</h2>
+        <p>
+          Madrid Radar is a complementary analytics layer around Madrid Monitor workflows.
+          We aim to present portfolio information in a clearer, more actionable format.
+        </p>
+      </section>
+    </div>
+
+    <div id="pricing" class="anchor full">
+      <section>
+        <h2>Pricing</h2>
+        <p class="muted">Pricing and limits may change during beta.</p>
+
+        <div class="price">
+          <div class="card">
+            <h3>Free </h3>
+            <div class="usd">$0<span class="muted">/month</span></div>
+            <ul>
+              <li>Up to <strong>20</strong> cases</li>
+              <li>Basic updates</li>
+              <li>No early signals</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Pro</h3>
+            <div class="usd">$49<span class="muted">/month</span></div>
+            <ul>
+              <li>Up to <strong>100</strong> cases</li>
+              <li>Early signals (faster change detection)</li>
+              <li>Exports</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Pro Plus</h3>
+            <div class="usd">$99<span class="muted">/month</span></div>
+            <ul>
+              <li>Up to <strong>300</strong> cases</li>
+              <li>Early signals (faster change detection)</li>
+              <li>Exports</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="note" style="margin-top:14px;">
+          <strong>Add-on cases</strong><br/>
+          Add <strong>+100</strong> cases for <strong>$39/month</strong>.
+          <div class="small" style="margin-top:6px;">Firm / business plans and shared usage: by request.</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Cancellation & refunds</h2>
         <ul>
-          <li>Trademark attorneys</li>
-          <li>Intellectual property consultants</li>
-          <li>Legal professionals</li>
-          <li>Companies managing trademark portfolios</li>
+          <li>Cancel anytime. Access remains until the end of the current billing period.</li>
+          <li>Refunds are handled case-by-case within seven days of the charge, where permitted by law.</li>
         </ul>
       </section>
     </div>
 
-    <div class="note">
-      <strong>Contact</strong><br/>
-      For product information and support: <a href="mailto:support@madrid-radar.com">support@madrid-radar.com</a><br/>
-      <span class="small">You can replace this email with your real support email at any time.</span>
+    <div id="terms" class="anchor full">
+      <section>
+        <h2>Terms & Conditions</h2>
+        <p class="small">Last updated: February 13, 2026</p>
+        <p>
+          These Terms & Conditions ("Terms") govern access to and use of Madrid Radar (the "Service").
+          The Service is provided by Navilon Dev ("Provider", "we", "us"). By using the Service, you agree to these Terms.
+        </p>
+        <ul>
+          <li><strong>Service.</strong> Madrid Radar is a digital subscription service that provides workflow features for tracking Madrid Monitor trademark cases (portfolio view, event timeline, and exports).</li>
+          <li><strong>Accounts.</strong> You are responsible for maintaining the confidentiality of your account credentials and for all activity under your account.</li>
+          <li><strong>Subscriptions & billing.</strong> Paid plans renew automatically until cancelled. Prices and plan limits may change during beta; changes apply prospectively.</li>
+          <li><strong>Cancellation.</strong> You can cancel at any time. You will retain access until the end of the current billing period.</li>
+          <li><strong>Refunds.</strong> Refunds are considered case-by-case within seven days of a charge, where permitted by law and subject to the payment provider’s rules.</li>
+          <li><strong>Acceptable use.</strong> You agree not to misuse the Service, attempt to disrupt it, reverse engineer it, or use it for unlawful purposes.</li>
+          <li><strong>Third-party services.</strong> Payments and billing may be handled by third-party processors or a merchant of record. Their terms may also apply.</li>
+          <li><strong>Intellectual property.</strong> The Service and its content (excluding third-party marks and data) are owned by the Provider and protected by applicable laws.</li>
+          <li><strong>Disclaimer.</strong> The Service is provided "as is" and "as available" without warranties of any kind. The Service does not provide legal advice.</li>
+          <li><strong>Limitation of liability.</strong> To the maximum extent permitted by law, the Provider will not be liable for indirect, incidental, or consequential damages.</li>
+          <li><strong>Governing law.</strong> Unless required otherwise by mandatory law, these Terms are governed by the laws of the Provider’s jurisdiction.</li>
+          <li><strong>Contact.</strong> Questions about these Terms can be sent to the contact email below.</li>
+        </ul>
+      </section>
+    </div>
+
+    <div id="privacy" class="anchor full">
+      <section>
+        <h2>Privacy Policy</h2>
+        <p class="small">Last updated: February 13, 2026</p>
+        <p>
+          This Privacy Policy explains how we collect, use, and protect information when you use the Service.
+        </p>
+        <ul>
+          <li><strong>Information you provide.</strong> We may collect your email address and account details you provide to access the Service.</li>
+          <li><strong>Payment information.</strong> Payments are processed by third-party providers (such as a merchant of record or payment processor). We do not store full payment card details.</li>
+          <li><strong>Usage data.</strong> We may collect basic usage and diagnostic data to operate, secure, and improve the Service (for example, feature usage and error logs).</li>
+          <li><strong>How we use data.</strong> To provide the Service, manage subscriptions, respond to support requests, prevent abuse, and improve product quality.</li>
+          <li><strong>Sharing.</strong> We share data only with service providers necessary to run the Service (hosting, analytics, billing) and as required by law.</li>
+          <li><strong>Retention.</strong> We retain information as long as needed to provide the Service and comply with legal obligations.</li>
+          <li><strong>Your choices.</strong> You may request access, correction, or deletion of your account information, subject to legal and operational requirements.</li>
+          <li><strong>Contact.</strong> For privacy requests, contact us using the email below.</li>
+        </ul>
+      </section>
+    </div>
+
+    <div id="contact" class="anchor full">
+      <section>
+        <h2>Contact</h2>
+        <p>
+          Support and billing questions: <a href="mailto:Navilon.info@proton.me">Navilon.info@proton.me</a>
+        </p>
+        <p class="small" style="margin-top:8px;">Replace this email with your real support email at any time.</p>
+      </section>
     </div>
 
     <footer>
